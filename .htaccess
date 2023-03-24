@@ -1,0 +1,9 @@
+DirectoryIndex index.html index.php
+
+ErrorDocument 404 /404.html
+
+ExpiresDefault "access plus 1 month"
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
