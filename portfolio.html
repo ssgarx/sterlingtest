@@ -1,430 +1,903 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="STERLING AG" />
-    <meta name="description" >
+    <meta name="description" />
 
-        <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NKSZCFK');</script>
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : ""
+        j.async = true
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, "script", "dataLayer", "GTM-NKSZCFK")
+    </script>
     <!-- End Google Tag Manager -->
 
-    
     <!-- Document title -->
     <title>Sterling AG</title>
     <!-- Stylesheets & Fonts -->
-    <link href="css/plugins.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet"> 
+    <link href="css/plugins.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
     <!-- Plugins -->
-   
-    <link rel="stylesheet" href="css/revoulation.css">
-    <link rel="stylesheet" href="css/plugins1.css">
-     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
 
+    <link rel="stylesheet" href="css/revoulation.css" />
+    <link rel="stylesheet" href="css/plugins1.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Style Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/custom1.css">
+    <link rel="stylesheet" href="css/custom1.css" />
 
-    
+    <!-- LOAD JQUERY LIBRARY -->
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"
+    ></script>
 
-        <!-- LOAD JQUERY LIBRARY -->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-        
-        <!-- LOADING FONTS AND ICONS -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <!-- LOADING FONTS AND ICONS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/plugins/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/plugins/revolution/fonts/font-awesome/css/font-awesome.css"
+    />
 
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/plugins/revolution/css/settings.css"
+    />
+    <!-- REVOLUTION LAYERS STYLES -->
 
-        
-        <link rel="stylesheet" type="text/css" href="js/plugins/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-        <link rel="stylesheet" type="text/css" href="js/plugins/revolution/fonts/font-awesome/css/font-awesome.css">
-        
-        <!-- REVOLUTION STYLE SHEETS -->
-        <link rel="stylesheet" type="text/css" href="js/plugins/revolution/css/settings.css">
-        <!-- REVOLUTION LAYERS STYLES -->
-        
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/plugins/revolution/css/layers.css"
+    />
 
-            <link rel="stylesheet" type="text/css" href="js/plugins/revolution/css/layers.css">
-            
-            <!-- REVOLUTION NAVIGATION STYLES -->
-            <link rel="stylesheet" type="text/css" href="js/plugins/revolution/css/navigation.css">
-            
-            
-                    <!-- REVOLUTION JS FILES -->
-        <script type="text/javascript" src="js/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="js/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/plugins/revolution/css/navigation.css"
+    />
 
-        <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->    
-        <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-    </head>
-    
-    <body><!-- Body Inner -->   
-        
-        <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKSZCFK"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- REVOLUTION JS FILES -->
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/jquery.themepunch.tools.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/jquery.themepunch.revolution.min.js"
+    ></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/extensions/revolution.extension.actions.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/extensions/revolution.extension.migration.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/revolution/js/extensions/revolution.extension.video.min.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Body Inner -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NKSZCFK"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
-        
-        <div class="body-inner">
 
-
-   <!-- Header -->
-        <header id="header" data-transparent="true" class="dark">
-            <div class="header-inner">
-                <div class="container">
-                    <!--Logo-->
-                    <div id="logo">
-                        <a href="index.html" class="logo" data-src-dark="images/5.png">
-                            <img src="images/5.png" alt="Logo">
-                        </a>
-                    </div>
-                    <!--End: Logo-->
-                    
-                    
-                    <!--Header Extras-->
-                    <div class="header-extras">
-                        <ul>
-                            <li class="d-none d-xl-block d-lg-block">
-                                <!--top search-->
-                                <a href="#" class="toggle-item" data-target="#mainMenu" data-class="items-visible">
-                                    <i class="fa fa-bars" style="color: #000; "></i>
-                                    <i class="fa fa-times" style="color: #000; "></i>
-                                </a>
-                                <!--end: top search-->
-                            </li>
-                        </ul>
-                    </div>
-                    <!--end: Header Extras-->
-
-                    <!--Navigation Resposnive Trigger-->
-                    <div id="mainMenu-trigger" >
-                        <button class="lines-button x" > <span class="lines" ></span> </button>
-                    </div>
-                    <!--end: Navigation Resposnive Trigger-->
-
-                    <!--Navigation-->
-                    <div id="mainMenu" class="menu-slide">
-                        <div class="container">
-                            <nav>
-                                <ul>
-                                   <li><a href="index.html" style="color: #000;">Home</a></li>
-                                    <li><a href="portfolio.html" style="color: #000;">Portfolio</a></li>
-                                    <li><a href="about.html" style="color: #000;">About Us</a></li>
-                                    <li><a href="contactus.html" style="color: #000;">Contact Us</a></li>
-                                    
-                                                                       
-                                    
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <!--end: Navigation-->
-                </div>
+    <div class="body-inner">
+      <!-- Header -->
+      <header id="header" data-transparent="true" class="dark">
+        <div class="header-inner">
+          <div class="container">
+            <!--Logo-->
+            <div id="logo">
+              <a href="index.html" class="logo" data-src-dark="images/5.png">
+                <img src="images/5.png" alt="Logo" />
+              </a>
             </div>
-        </header>
-        <!-- end: Header -->
-         
+            <!--End: Logo-->
+
+            <!--Header Extras-->
+            <div class="header-extras">
+              <ul>
+                <li class="d-none d-xl-block d-lg-block">
+                  <!--top search-->
+                  <a
+                    href="#"
+                    class="toggle-item"
+                    data-target="#mainMenu"
+                    data-class="items-visible"
+                  >
+                    <i class="fa fa-bars" style="color: #000"></i>
+                    <i class="fa fa-times" style="color: #000"></i>
+                  </a>
+                  <!--end: top search-->
+                </li>
+              </ul>
+            </div>
+            <!--end: Header Extras-->
+
+            <!--Navigation Resposnive Trigger-->
+            <div id="mainMenu-trigger">
+              <button class="lines-button x">
+                <span class="lines"></span>
+              </button>
+            </div>
+            <!--end: Navigation Resposnive Trigger-->
+
+            <!--Navigation-->
+            <div id="mainMenu" class="menu-slide">
+              <div class="container">
+                <nav>
+                  <ul>
+                    <li><a href="index.html" style="color: #000">Home</a></li>
+                    <li>
+                      <a href="portfolio.html" style="color: #000">Portfolio</a>
+                    </li>
+                    <li>
+                      <a href="about.html" style="color: #000">About Us</a>
+                    </li>
+                    <li>
+                      <a href="contactus.html" style="color: #000"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!--end: Navigation-->
+          </div>
+        </div>
+      </header>
+      <!-- end: Header -->
+
       <!-- Captions -->
-        <section id="dynamic" style=" font-weight: 700; ">
-            <div class="container">
-               
-                <h1 class=" heading-h1 cd-headline clip is-full-width move-up wow" style="font-family: 'Raleway', sans-serif; font-weight: 700;">We build creative solutions that<br>
-                        <span class="cd-words-wrapper theme-color text-variation-play" style="font-family: 'Raleway', sans-serif;  color: #222222;"> 
-                                            <b style="font-weight: 400 !important;" class="is-visible">help brands do more.</b>
-                                            <b style="font-weight: 400 !important;">break through the clutter.</b>
-                                            <b style="font-weight: 400 !important;">drive business growth.</b>
-                                            <b style="font-weight: 400 !important;">amplify impact.</b>
-                                        </span> </h1>
-            </div>
-        </section>
-        <!-- end: Captions -->
+      <section id="dynamic" style="font-weight: 700">
+        <div class="container">
+          <h1
+            class="heading-h1 cd-headline clip is-full-width move-up wow"
+            style="font-family: 'Raleway', sans-serif; font-weight: 700"
+          >
+            We build creative solutions that<br />
+            <span
+              class="cd-words-wrapper theme-color text-variation-play"
+              style="font-family: 'Raleway', sans-serif; color: #222222"
+            >
+              <b style="font-weight: 400 !important" class="is-visible"
+                >help brands do more.</b
+              >
+              <b style="font-weight: 400 !important"
+                >break through the clutter.</b
+              >
+              <b style="font-weight: 400 !important">drive business growth.</b>
+              <b style="font-weight: 400 !important">amplify impact.</b>
+            </span>
+          </h1>
+        </div>
+      </section>
+      <!-- end: Captions -->
 
-        <!-- Page Conttent -->
-        <main class="page-content">
+      <!-- Page Conttent -->
+      <main class="page-content">
+        <!-- Start Portfolio Caption -->
+        <div
+          class="bk-portfolio-with-caption-area ptb--50 ptb-md--80 ptb-sm--40 bg_color--1"
+        >
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="valorant.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/valorant/Portfolio Page Thumbnail.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="bgmi.html">VALORANT</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">A Curious Sighting</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="valorant2.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/valorant2/Portfolio Page Thumbnail.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="valorant2.html">VALORANT</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        With Love, From VALORANT
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="valorant1.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/valorant1/Portfolio Page Thumbnail.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="valorant1.html">VALORANT</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">The New Wave</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="clashwalidiwali.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/ClashWaliDiwali/portfolio-page-thumbnail.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open-sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="clashwalidiwali.html">An Unexpected Guest</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">#ClashWaliDiwali</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="alagsaaction.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/alagsaaction/portfolio-page.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open-sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="alagsaaction.html"
+                          >Brawl Stars X Kartik Aryan</a
+                        >
+                      </h5>
+                      <p class="bk_pra lead text-center">#AlagSaAction</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="bgmi.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/bgmi/Portfolio Page Thumbnail.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="bgmi.html">BGMI</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        Anniversary Initiative
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="valorant3.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/valorant3/Portfolio Page Thumbnail.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="valorant3.html">VALORANT</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        Harbor at the harbor
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="thesearch.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/thesearch/portfolio-page-thumbnail.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open-sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="thesearch.html">For all the Clashers</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        Featuring Raman Negi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="beyondsnack.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/beyondsnack/Portfolio Page Thumbnail.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="beyondsnack.html">Beyond Snack</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">#24CaratTaste</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            
-            
-            
-            <!-- Start Portfolio Caption -->
-            <div class="bk-portfolio-with-caption-area ptb--50 ptb-md--80 ptb-sm--40 bg_color--1">
-                <div class="container">
-                    <div class="row">
-                        <!-- Start clash wali diwali-->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="clashwalidiwali.html"><img src="homepages/agency/images/latest-products/ClashWaliDiwali/portfolio-page-thumbnail.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open-sans', sans-serif;font-weight: 700;margin-bottom: 0;"><a href="clashwalidiwali.html">An Unexpected Guest</a></h5>
-                                        <p class="bk_pra lead text-center">#ClashWaliDiwali</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End clash wali diwali-->
-                        <!-- Start the Search-->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="thesearch.html"><img src="homepages/agency/images/latest-products/thesearch/portfolio-page-thumbnail.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open-sans', sans-serif;font-weight: 700;margin-bottom: 0;"><a href="thesearch.html">For all the Clashers</a></h5>
-                                        <p class="bk_pra lead text-center">Featuring Raman Negi</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End the search -->
-                        <!-- Start alag sa action-->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="alagsaaction.html"><img src="homepages/agency/images/latest-products/alagsaaction/portfolio-page.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open-sans', sans-serif;font-weight: 700;margin-bottom: 0;"><a href="alagsaaction.html">Brawl Stars X Kartik Aryan</a></h5>
-                                        <p class="bk_pra lead text-center">#AlagSaAction</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End alag sa action -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="clashwalifeeling.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/3.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open-sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="clashwalifeeling.html">Clash Of Clans</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        That #ClashWaliFeeling
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Claswalifeeling -->
+              <!-- Start Brawl Star -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="brawl.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/brawl.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="brawl.html">Brawl Stars</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">#TriplingInBrawl</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Brawl Star -->
 
-                        <!-- Start Claswalifeeling-->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="clashwalifeeling.html"><img src="homepages/agency/images/latest-products/project/3.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open-sans', sans-serif;font-weight: 700;margin-bottom: 0;"><a href="clashwalifeeling.html">Clash Of Clans</a></h5>
-                                        <p class="bk_pra lead text-center">That #ClashWaliFeeling</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Claswalifeeling -->
-                        <!-- Start Brawl Star -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="brawl.html"><img src="homepages/agency/images/latest-products/project/brawl.jpg" alt="">
-                                    </a>
+              <!-- Start Superfest -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="superfest.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/7.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="superfest.html">Supercell</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        Launching #SuperFest in India
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Superfest -->
 
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="brawl.html">Brawl Stars</a></h5>
-                                        <p class="bk_pra lead text-center">#TriplingInBrawl</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Brawl Star -->
+              <!-- Start Shyamsteel -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="shyamsteel.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/6.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open-sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="shyamsteel.html">Shyam Steel </a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        Steals the spotlight
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Shyamsteel -->
+              <!-- Start clash tak -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="clashtak.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/clashtak.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open-sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="clashtak.html">Clash of Clans </a>
+                      </h5>
+                      <p class="bk_pra lead text-center">Clash Tak</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End clash tak -->
+              <!-- Start tatamotors -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="tatamotors.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/4.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open-sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="tatamotors.html">TATA Motors</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        A TATA Motors Diwali
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End tatamotors -->
 
-                         <!-- Start Superfest -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="superfest.html"><img src="homepages/agency/images/latest-products/project/7.jpg" alt="">
-                                    </a>
+              <!-- Start jtp-->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="jtp.html">
+                      <img
+                        src="homepages/agency/images/latest-products/project/1.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open-sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="jtp.html"></a>JTP
+                      </h5>
+                      <p class="bk_pra lead text-center">A #RacerAtHeart</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End jtp -->
 
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="superfest.html">Supercell</a></h5>
-                                        <p class="bk_pra lead text-center">Launching #SuperFest in India</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Superfest -->
+              <!-- Start castrol-->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="castrol.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/2.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open-sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="castrol.html">Castrol Activ</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">#ProtectWhatYouLove</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End castrol -->
 
-                        <!-- Start Shyamsteel -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s"data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="shyamsteel.html"><img src="homepages/agency/images/latest-products/project/6.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead"  style="font-family: 'Open-sans', sans-serif;font-weight: 700; margin-bottom: 0;" ><a href="shyamsteel.html">Shyam Steel </a></h5>
-                                        <p class="bk_pra lead text-center">Steals the spotlight</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Shyamsteel -->
-                         <!-- Start clash tak -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s"data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="clashtak.html"><img src="homepages/agency/images/latest-products/project/clashtak.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead"  style="font-family: 'Open-sans', sans-serif;font-weight: 700; margin-bottom: 0;" ><a href="clashtak.html">Clash of Clans </a></h5>
-                                        <p class="bk_pra lead text-center">Clash Tak</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End clash tak -->
-                         <!-- Start tatamotors -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="tatamotors.html"><img src="homepages/agency/images/latest-products/project/4.jpg" alt="">
-                                    </a>
-                                 
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open-sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="tatamotors.html">TATA Motors</a></h5>
-                                       <p class="bk_pra lead text-center">A TATA Motors Diwali</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End tatamotors -->
+              <!-- Start Cricink-->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="cricink.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/5.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open-sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="cricink.html">Castrol Activ / TATA motors</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">Cricink for the win</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End cricink -->
+              <!-- Start thanksdad -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="icici.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/15.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="icici.html">ICICI Bank</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">#ThanksDad</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End thanksdad -->
+              <!-- Start hdfc aapki zaroorat hai  -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="hdfc.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/16.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="hdfc.html">HDFC Life</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">#AapkiZarooratHai</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End hdfc aapki zaroorat hai -->
 
-                        <!-- Start jtp-->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="jtp.html">
-                                       <img src="homepages/agency/images/latest-products/project/1.jpg" alt="">
-                                    </a>
-
-                                    
-
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open-sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="jtp.html"></a>JTP</h5>
-                                        <p class="bk_pra lead text-center">A #RacerAtHeart</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End jtp -->
-
-                        <!-- Start castrol-->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb"  style="margin-bottom: 0;">
-                                    <a href="castrol.html"><img src="homepages/agency/images/latest-products/project/2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open-sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="castrol.html">Castrol Activ</a></h5>
-                                       <p class="bk_pra lead text-center">#ProtectWhatYouLove</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End castrol -->
-
-                        
-
-                       
-
-                        <!-- Start Cricink-->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="cricink.html"><img src="homepages/agency/images/latest-products/project/5.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open-sans', sans-serif;font-weight: 700;margin-bottom: 0;"><a href="cricink.html">Castrol Activ / TATA motors</a></h5>
-                                       <p class="bk_pra lead text-center">Cricink for the win</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End cricink -->
-                          <!-- Start thanksdad -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="icici.html"><img src="homepages/agency/images/latest-products/project/15.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="icici.html">ICICI Bank</a></h5>
-                                        <p class="bk_pra lead text-center">#ThanksDad
-</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End thanksdad -->
-                        <!-- Start hdfc aapki zaroorat hai  -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="hdfc.html"><img src="homepages/agency/images/latest-products/project/16.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="hdfc.html">HDFC Life</a></h5>
-                                        <p class="bk_pra lead text-center">#AapkiZarooratHai
-</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End hdfc aapki zaroorat hai -->
-
-                        
-
-                       
-
-            <!---- Start tata aerospace --
+              <!---- Start tata aerospace --
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
                             <div class="portfolio with-caption mt--30">
                                 <div class="thumb" style="margin-bottom: 0;">
@@ -443,381 +916,442 @@
                         </div>
                         - End tata aerospace  -->
 
-                        <!-- Start shyamsteel bihar expansion-->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="regional.html"><img src="homepages/agency/images/latest-products/project/10.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="regional.html">Shyam Steel</a></h5>
-                                        <p class="bk_pra lead text-center">The Bihar Expansion</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--shyamsteel bihar expansion- -->
-
-
-                           <!-- Start bysunil -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="bysunil.html"><img src="homepages/agency/images/latest-products/project/9.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="bysunil.html">By Sunil</a></h5>
-                                        <p class="bk_pra lead text-center">A tale spun by yarn</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End bysunil -->
-                        
-                         <!-- Start vikram solar -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="vikramsolar.html"><img src="homepages/agency/images/latest-products/project/11.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="vikramsolar.html">Vikram Solar</a></h5>
-                                        <p class="bk_pra lead text-center">'Gudiya' ki kahani</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End vikram solar -->
-                          <!-- Start servisingh -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="servisingh.html"><img src="homepages/agency/images/latest-products/project/13.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="servisingh.html">Servisingh.com</a></h5>
-                                        <p class="bk_pra lead text-center">Launching the Servisingh brand
-</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End servisingh -->
-                         <!-- Start tata tiago -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="tatatiago.html"><img src="homepages/agency/images/latest-products/project/17.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="tatatiago.html">Tata Tiago</a></h5>
-                                        <p class="bk_pra lead text-center">A #Fantastico Christmas</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End tata tiago -->
-
-                         <!-- Start amul -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="amul.html"><img src="homepages/agency/images/latest-products/project/12.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="amul.html">Agency Initiative</a></h5>
-                                        <p class="bk_pra lead text-center">The 'Amul Girl' tribute</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End amul -->
-                         
-                  
-                     <!-- Start movie poster -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="movieposter.html"><img src="homepages/agency/images/latest-products/project/14.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="movieposter.html">Agency Initiative</a></h5>
-                                        <p class="bk_pra lead text-center">Let's get Filmy</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End movieposter -->
-                     <!-- Start beyond snack -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="beyondsnack.html"><img src="homepages/agency/images/latest-products/beyondsnack/Portfolio Page Thumbnail.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="beyondsnack.html">Beyond Snack</a></h5>
-                                        <p class="bk_pra lead text-center">#24CaratTaste</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End beyond snack -->
-                     <!-- Start bgmi -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="bgmi.html"><img src="homepages/agency/images/latest-products/bgmi/Portfolio Page Thumbnail.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="bgmi.html">BGMI</a></h5>
-                                        <p class="bk_pra lead text-center">Anniversary Initiative</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End bgmi -->
-                     <!-- Start VALORANT1 -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="valorant.html"><img src="homepages/agency/images/latest-products/valorant/Portfolio Page Thumbnail.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="bgmi.html">VALORANT</a></h5>
-                                        <p class="bk_pra lead text-center">A Curious Sighting</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End VALORANT1 -->
-                     <!-- Start VALORANT1 -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="valorant1.html"><img src="homepages/agency/images/latest-products/valorant1/Portfolio Page Thumbnail.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="valorant1.html">VALORANT</a></h5>
-                                        <p class="bk_pra lead text-center">The New Wave</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End VALORANT1 -->
-                     <!-- Start VALORANT2 -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="valorant2.html"><img src="homepages/agency/images/latest-products/valorant2/Portfolio Page Thumbnail.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="valorant2.html">VALORANT</a></h5>
-                                        <p class="bk_pra lead text-center">With Love, From VALORANT</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End VALORANT2 -->
-                     <!-- Start VALORANT2 -->
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow" data-wow-delay=".26s">
-                            <div class="portfolio with-caption mt--30">
-                                <div class="thumb" style="margin-bottom: 0;">
-                                    <a href="valorant3.html"><img src="homepages/agency/images/latest-products/valorant3/Portfolio Page Thumbnail.jpg" alt="">
-                                    </a>
-
-                                  
-                                </div>
-                                <div class="caption-bottom text-left">
-                                    <div class="info">
-                                        <h5 class="heading heading-h5 lead" style="font-family: 'Open Sans', sans-serif;font-weight: 700; margin-bottom: 0;"><a href="valorant3.html">VALORANT</a></h5>
-                                        <p class="bk_pra lead text-center">Harbor at the harbor</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End VALORANT2 -->
-                        
-                         
-
+              <!-- Start shyamsteel bihar expansion-->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="regional.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/10.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="regional.html">Shyam Steel</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">The Bihar Expansion</p>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <!-- End Portfolio Caption -->
-               
-
-       
-                  
-
-        </main>
-        <!--// Page Conttent -->
-<!-- Footer -->
-  <footer id="footer" style="padding-top:0; font-family: 'Open Sans', sans-serif;">
-    <div class="footer-content">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-4  col-lg-2 col-md-5"> 
-            <!-- Footer widget area 1 -->
-            <div class="widget  widget-contact-us lead"  style="padding-top:0; ">
-              <h4>Connect with Sterling AG</h4>
-              <ul class="list-icon">
-                <li><a href="mailto:abhishek@thesterling.co"><i class="far fa-envelope"></i> abhishek@thesterling.co</a> </li>
-                <li><a href="tel:+91 98303 30825"><i class="fa fa-phone fa-flip-horizontal"></i>+91 98303 30825</a></li>
-                <li><a href="https://goo.gl/maps/V1E79FVNYz6x3G6s5 "target="_blank"><i class="fa fa-map-marker-alt"></i>C/o Awfis Space Solutions, 10th Floor, Aston Building, Andheri West, Lokhandwala, Mumbai - 400053</a></li>
-                 
-                
-                
-              </ul>
-            </div>
-            <!-- end: Footer widget area 1 --> 
-          </div>
-
-          
-          <div class="col-lg-5 col-md-7">
-                        <form class="widget-contact-form" action="include/contact-form.php" role="form" method="post">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-    <span class="input-group-text " id="basic-addon1"><i class="fa fa-user"></i></span>
-  </div>
-  <input type="text" aria-required="true" name="widget-contact-form-name" class="form-control required name lead" placeholder="Organisation">
-                                </div>
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
-  </div>
-                                    <input type="email" aria-required="true" name="widget-contact-form-email" class="form-control lead required email" placeholder="Email">
-                                </div>
-                            <div class="form-group mb-2">
-                                <textarea type="text" name="widget-contact-form-message" rows="3" class="lead form-control required" placeholder="Message"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-outline btn-dark" type="submit" id="form-submit"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
-                            </div>
-                        </form>
-
-                    </div>
-
-                    <div class="col-lg-2  col-lg-2 col-md-4">
-              
-              <!-- Social icons -->
-              <h4 style=" font-family: 'Raleway', sans-serif; font-weight: 700;">Follow Us</h4>
-              <div class="social-icons social-icons-light social-icons-colored-hover float-left" >
-                <ul>
-                   <li class="social-instagram"><a href="https://www.instagram.com/sterlingram_ag/"><i class="fab fa-instagram"></i></a></li>
-                  <li class="social-facebook"><a href="https://www.facebook.com/sterlingAG/"><i class="fab fa-facebook-f"></i></a></li>
-                  <li class="social-linkedin"><a href="https://www.linkedin.com/company/switch---the-idea-factory"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
               </div>
-              <!-- end: Social icons --> 
+              <!--shyamsteel bihar expansion- -->
+
+              <!-- Start bysunil -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="bysunil.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/9.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="bysunil.html">By Sunil</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">A tale spun by yarn</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End bysunil -->
+
+              <!-- Start vikram solar -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="vikramsolar.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/11.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="vikramsolar.html">Vikram Solar</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">'Gudiya' ki kahani</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End vikram solar -->
+              <!-- Start servisingh -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="servisingh.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/13.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="servisingh.html">Servisingh.com</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        Launching the Servisingh brand
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End servisingh -->
+              <!-- Start tata tiago -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="tatatiago.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/17.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="tatatiago.html">Tata Tiago</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        A #Fantastico Christmas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End tata tiago -->
+
+              <!-- Start amul -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="amul.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/12.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="amul.html">Agency Initiative</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">
+                        The 'Amul Girl' tribute
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End amul -->
+
+              <!-- Start movie poster -->
+              <div
+                class="col-lg-4 col-md-6 col-sm-6 col-12 move-up wow"
+                data-wow-delay=".26s"
+              >
+                <div class="portfolio with-caption mt--30">
+                  <div class="thumb" style="margin-bottom: 0">
+                    <a href="movieposter.html"
+                      ><img
+                        src="homepages/agency/images/latest-products/project/14.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="caption-bottom text-left">
+                    <div class="info">
+                      <h5
+                        class="heading heading-h5 lead"
+                        style="
+                          font-family: 'Open Sans', sans-serif;
+                          font-weight: 700;
+                          margin-bottom: 0;
+                        "
+                      >
+                        <a href="movieposter.html">Agency Initiative</a>
+                      </h5>
+                      <p class="bk_pra lead text-center">Let's get Filmy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End movieposter -->
+              <!-- Start beyond snack -->
+
+              <!-- End beyond snack -->
+              <!-- Start bgmi -->
+
+              <!-- End bgmi -->
+              <!-- Start VALORANT1 -->
+
+              <!-- End VALORANT1 -->
+              <!-- Start VALORANT1 -->
+
+              <!-- End VALORANT1 -->
+              <!-- Start VALORANT2 -->
+
+              <!-- End VALORANT2 -->
+              <!-- Start VALORANT2 -->
+
+              <!-- End VALORANT2 -->
             </div>
+          </div>
+        </div>
+        <!-- End Portfolio Caption -->
+      </main>
+      <!--// Page Conttent -->
+      <!-- Footer -->
+      <footer
+        id="footer"
+        style="padding-top: 0; font-family: 'Open Sans', sans-serif"
+      >
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-lg-2 col-md-5">
+                <!-- Footer widget area 1 -->
+                <div
+                  class="widget widget-contact-us lead"
+                  style="padding-top: 0"
+                >
+                  <h4>Connect with Sterling AG</h4>
+                  <ul class="list-icon">
+                    <li>
+                      <a href="mailto:abhishek@thesterling.co"
+                        ><i class="far fa-envelope"></i>
+                        abhishek@thesterling.co</a
+                      >
+                    </li>
+                    <li>
+                      <a href="tel:+91 98303 30825"
+                        ><i class="fa fa-phone fa-flip-horizontal"></i>+91 98303
+                        30825</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://goo.gl/maps/V1E79FVNYz6x3G6s5 "
+                        target="_blank"
+                        ><i class="fa fa-map-marker-alt"></i>C/o Awfis Space
+                        Solutions, 10th Floor, Aston Building, Andheri West,
+                        Lokhandwala, Mumbai - 400053</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- end: Footer widget area 1 -->
+              </div>
 
+              <div class="col-lg-5 col-md-7">
+                <form
+                  class="widget-contact-form"
+                  action="include/contact-form.php"
+                  role="form"
+                  method="post"
+                >
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="text"
+                      aria-required="true"
+                      name="widget-contact-form-name"
+                      class="form-control required name lead"
+                      placeholder="Organisation"
+                    />
+                  </div>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="fa fa-envelope"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="email"
+                      aria-required="true"
+                      name="widget-contact-form-email"
+                      class="form-control lead required email"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="form-group mb-2">
+                    <textarea
+                      type="text"
+                      name="widget-contact-form-message"
+                      rows="3"
+                      class="lead form-control required"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <button
+                      class="btn btn-outline btn-dark"
+                      type="submit"
+                      id="form-submit"
+                    >
+                      <i class="fa fa-paper-plane"></i>&nbsp;Send message
+                    </button>
+                  </div>
+                </form>
+              </div>
 
-
-      </div>
-    </div>
-    </div>
-    <div class="copyright-content">
-      <div class="container">
-         
-        
-        <div class="col-lg-12 ">
-            <div class="text-center">
+              <div class="col-lg-2 col-lg-2 col-md-4">
+                <!-- Social icons -->
+                <h4
+                  style="font-family: 'Raleway', sans-serif; font-weight: 700"
+                >
+                  Follow Us
+                </h4>
+                <div
+                  class="social-icons social-icons-light social-icons-colored-hover float-left"
+                >
+                  <ul>
+                    <li class="social-instagram">
+                      <a href="https://www.instagram.com/sterlingram_ag/"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li class="social-facebook">
+                      <a href="https://www.facebook.com/sterlingAG/"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li class="social-linkedin">
+                      <a
+                        href="https://www.linkedin.com/company/switch---the-idea-factory"
+                        ><i class="fab fa-linkedin"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end: Social icons -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-content">
+          <div class="container">
+            <div class="col-lg-12">
+              <div class="text-center">
                 <a href="/privacy.html">Privacy</a>
                 |
                 <a href="/termsofuse.html">Terms of Use</a>
               </div>
-              
-                 <div class="copyright-text text-center">
-                     &copy; 2019 Sterling AG. All Rights Reserved.
-                </div>
-      
-</div>
-      </div>
+
+              <div class="copyright-text text-center">
+                &copy; 2019 Sterling AG. All Rights Reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end: Footer -->
     </div>
-  </footer>
-  <!-- end: Footer -->
+    <!-- end: Body Inner -->
 
-
-</div>    <!-- end: Body Inner -->
-
-    
-                
-
-    
     <!--<script src="js/jquery.js"></script>-->
     <script src="js/plugins.js"></script>
     <script type="text/javascript">
-        $("#portfolio").imagesLoaded(function(){
-    $('#portfolio').masonry({
-                itemSelector: '.scrapcontent',
-                columnWidth: 3,
-                isAnimated:true,
-                animationOptions: {
-                    duration: 700,
-                    easing:'linear',
-                    queue :false
-               }
-         });
-}
+              $("#portfolio").imagesLoaded(function(){
+          $('#portfolio').masonry({
+                      itemSelector: '.scrapcontent',
+                      columnWidth: 3,
+                      isAnimated:true,
+                      animationOptions: {
+                          duration: 700,
+                          easing:'linear',
+                          queue :false
+                     }
+               });
+      }
     </script>
     <script type="text/javascript">
-        // MDB Lightbox Init
-$(function () {
-$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-});
+      // MDB Lightbox Init
+      $(function () {
+        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html")
+      })
     </script>
     <!--Template functions-->
     <script src="js/functions.js"></script>
 
-
-       <!-- Js Files -->
+    <!-- Js Files -->
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -840,6 +1374,5 @@ $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
     <script src="js/revolution.extension.slideanims.min.js"></script>
     <script src="js/revolution.extension.video.min.js"></script>
     <script src="js/revoulation.js"></script>
-   
-        </body>
+  </body>
 </html>
